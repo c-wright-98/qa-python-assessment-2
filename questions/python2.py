@@ -170,6 +170,8 @@ def five():
 
 
 def six(string):
+    if string.endswith("py") or string.endswith("pY") or string.endswith("PY") or string.endswith("Py"):
+        return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
