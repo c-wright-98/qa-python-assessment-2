@@ -222,7 +222,14 @@ def seven(a, b, c):
 
 
 def eight(string,  a):
-    return ""
+    middle_index = len(string) // 2
+    remove = a // 2
+
+    if a % 2 == 0: # even integer
+        result = string[:middle_index - remove] + string[middle_index + remove:]
+    else:# odd integer
+        result = string[:middle_index - remove] + string[middle_index + remove+1:]
+    return result
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
