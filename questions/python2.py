@@ -118,7 +118,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    string = ""
+    for char1, char2 in zip(string1, string2):
+        string += char1 + char2
+    return string
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
