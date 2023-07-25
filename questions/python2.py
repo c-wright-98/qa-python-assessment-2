@@ -120,6 +120,7 @@ def three(a):
 def four(string1, string2):
     string = ""
     for char1, char2 in zip(string1, string2):
+        # the zip function creates an iterator that will aggregate elements from two or more iterables.
         string += char1 + char2
     return string
 
