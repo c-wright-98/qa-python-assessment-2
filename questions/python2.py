@@ -271,8 +271,10 @@ def nine(string1, string2):
 
 def ten(x, y):
     #an array is lists within a list, allowing you to make matrix's and arrays
-    if x >= 0 and y >= 0:
-        array = [[i*j for j in range(y)]for i in range(x)]
+    if x > 0 and y > 0:
+        array = [[i*j for j in range(x)]for i in range(y)]
+    else:
+        array = []
     return array
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
