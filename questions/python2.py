@@ -249,7 +249,15 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    # Count the individual characters in the string
+    count1 = {}
+    count2 = {}
+
+    for i in string1:
+        count1[i] = count1.get(i,0) +1
+        #increments the count by 1 for the letters, if it does not exist it adds it with 0 and then adds 1
+    for i in string2:
+        count2[i] = count2.get(i,0) +1
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
